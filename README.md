@@ -23,7 +23,7 @@ If you find this code useful, please consider citing:
 
 #### Usage
 
-You can encode/decode an image with compression option using the following command exmaple:
+You can apply the watermarking process over an image with compression option using the following command exmaple:
 
 ```
 python watermarking/main.py --inFolder ./kodak_imgs/ \
