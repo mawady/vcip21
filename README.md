@@ -21,7 +21,18 @@ If you find this code useful, please consider citing:
 
 [Kodak Lossless True Color Image Suite](http://r0k.us/graphics/kodak/index.html) this dataset was used to evaluate the watermarking methods.
 
+#### Usage
 
+You can encode/decode an image with compression option using the following command exmaple:
+
+```
+python watermarking/main.py --inFolder ./kodak_imgs/ \
+               --outFolder ./tmp/ \
+               --imgSrc kodim23.png \
+               --imgWatr kodim15.png \
+               --method ADD_DCT \
+               --comp COMP_TFCI_HI
+```
 
 ---
 
@@ -42,19 +53,6 @@ If you find this code useful, please consider citing:
 #### Dataset
 
 [JPEG-AI Dataset](https://jpegai.github.io/3-datasets/) was used to train and evaluate the models.
-
-#### Usage
-
-You can encode/decode an image with compression option using the following command exmaple:
-
-```
-python watermarking/main.py --inFolder ./kodak_imgs/ \
-               --outFolder ./tmp/ \
-               --imgSrc kodim23.png \
-               --imgWatr kodim15.png \
-               --method ADD_DCT \
-               --comp COMP_TFCI_HI
-```
 
 #### Compress Images
 
