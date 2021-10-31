@@ -1,12 +1,33 @@
 # Security and Forensics Exploration of Learning-based Image Coding
 
-## Watermarking
+## Citation
 
-TBC
+If you find this code useful, please consider citing:
+
+    @inproceedings{bhowmik2021vcip,
+        Author = {Deepayan Bhowmik and Mohamed Elawady and Keiller Nogueira},
+        Title = {Security and Forensics Exploration of Learning-based Image Coding},
+        Booktitle = {IEEE Visual Communications and Image Processing (VCIP)},
+        Year = {2021}
+    }
+---
+## Watermarking
+### Diagram - Watermarking
+![Diagram - Watermarking](diagram_wtr.png)
+### Results - Watermarking
+![Results - Watermarking](results_wtr.png)
+
+#### Dataset
+
+[Kodak Lossless True Color Image Suite](http://r0k.us/graphics/kodak/index.html) this dataset was used to evaluate the watermarking methods.
+
+
+
+---
 
 ## Source (DNN Architecture) Identification
-
-![Source Identification](bitman.png)
+### Diagram - Source Identification
+![Diagram - Source Identification](diagram_src_idt.png)
 
 #### Requirements
 
@@ -21,6 +42,19 @@ TBC
 #### Dataset
 
 [JPEG-AI Dataset](https://jpegai.github.io/3-datasets/) was used to train and evaluate the models.
+
+#### Usage
+
+You can encode/decode an image with compression option using the following command exmaple:
+
+```
+python watermarking/main.py --inFolder ./kodak_imgs/ \
+               --outFolder ./tmp/ \
+               --imgSrc kodim23.png \
+               --imgWatr kodim15.png \
+               --method ADD_DCT \
+               --comp COMP_TFCI_HI
+```
 
 #### Compress Images
 
@@ -59,7 +93,7 @@ After compressing the dataset, its structure should be like this:
 You can train/test a model using the following command:
 
 ```
-python main.py --operation training/test \
+python src_identification/main.py --operation training/test \
                --dataset_path ROOT_PATH_TO_DATASET \
                --output_path PATH_TO_SAVE_OUTPUTS_MODELS \
                --network NETWORK_TO_USE \
@@ -70,14 +104,5 @@ python main.py --operation training/test \
                --epoch_num 50
 ```
 
-### Citation
 
-If you find this code useful, please consider citing:
-
-    @inproceedings{bhowmik2021vcip,
-        Author = {Deepayan Bhowmik and Mohamed Elawady and Keiller Nogueira},
-        Title = {Security and Forensics Exploration of Learning-based Image Coding},
-        Booktitle = {IEEE Visual Communications and Image Processing (VCIP)},
-        Year = {2021}
-    }
 
