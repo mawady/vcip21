@@ -62,12 +62,12 @@ if __name__ == "__main__":
         )
     else:
         results = do_singleRun_dwt(
-            args.InFolder,
+            args.inFolder,
             args.imgSrc,
             args.imgWtr,
             args.method,
             args.comp,
-            args.OutFolder
+            args.outFolder
         )
 
     print("results:\n{}".format(results))
