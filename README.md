@@ -8,7 +8,9 @@ If you find this code useful, please consider citing:
         Author = {Deepayan Bhowmik and Mohamed Elawady and Keiller Nogueira},
         Title = {Security and Forensics Exploration of Learning-based Image Coding},
         Booktitle = {IEEE Visual Communications and Image Processing (VCIP)},
-        Year = {2021}
+        Year = {2021},
+        pages={1-5},
+        doi={10.1109/VCIP53242.2021.9675445}
     }
 ---
 ## Watermarking
