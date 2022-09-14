@@ -31,7 +31,7 @@ You can apply the watermarking process over an image with compression option usi
 python watermarking/main.py --inFolder ./kodak_imgs/ \
                --outFolder ./tmp/ \
                --imgSrc kodim23.png \
-               --imgWatr kodim15.png \
+               --imgWtr kodim15.png \
                --method ADD_DCT \
                --comp COMP_TFCI_HI
 ```
